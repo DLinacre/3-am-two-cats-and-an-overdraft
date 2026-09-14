@@ -220,6 +220,14 @@ new_script_content = f"""
       const brandSub = document.querySelector('.brand-sub');
       if (brandSub) brandSub.innerText = `${{alb.title}} (${{alb.year}})`;
 
+      // Update Track Tab Count
+      if (tabPlaylistBtn) tabPlaylistBtn.innerText = `${{tracks.length}} Tracks`;
+
+      // Update Video Poster & Sidebar Cover Link
+      if (video) video.poster = alb.cover;
+      const coverArtLink = document.getElementById('coverArtLink');
+      if (coverArtLink) coverArtLink.href = alb.cover;
+
       document.title = `David Linacre - ${{alb.title}} (${{alb.year}}) [${{alb.edition}}]`;
 
       if (discoModal) discoModal.style.display = 'none';
@@ -266,6 +274,9 @@ new_script_content = f"""
       document.getElementById('currentTrackTitle').innerText = t.title;
       document.getElementById('currentTrackKey').innerText = t.key;
       document.getElementById('currentTrackBpm').innerText = `${{t.bpm}} BPM`;
+
+      const artistEl = document.querySelector('.artist-name');
+      if (artistEl) artistEl.innerText = `${{ALBUMS[currentAlbumId].vocals || 'David Linacre'}} • ${{ALBUMS[currentAlbumId].edition || 'Studio Master'}}`;
 
       lyricsContainer.innerText = lyricsData[t.num] || 'Lyrics loading...';
 
@@ -414,9 +425,10 @@ new_script_content = f"""
     }}, {{ once: true }});
 
     // Check hash or query param for album
-    const hash = window.location.hash.replace('#', '');
-    if (hash && ALBUMS[hash]) {{
-      switchAlbum(hash);
+    const urlParams = new URLSearchParams(window.location.search);
+    const targetAlbum = urlParams.get('album') || window.location.hash.replace('#', '');
+    if (targetAlbum && ALBUMS[targetAlbum]) {{
+      switchAlbum(targetAlbum);
     }} else {{
       renderPlaylist();
       loadTrack(0);

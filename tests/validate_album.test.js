@@ -38,4 +38,9 @@ assert(scriptMatch, 'index.html must contain a <script> block');
 new Function(scriptMatch[1]);
 console.log('✔ index.html embedded JavaScript is 100% syntactically valid');
 
+// 4. Validate Album 2 dedicated entry point
+const album2Entry = path.resolve(__dirname, '../albums/neon-velvet-nights/index.html');
+assert(fs.existsSync(album2Entry), 'albums/neon-velvet-nights/index.html must exist');
+console.log('✔ albums/neon-velvet-nights/index.html entry point validated');
+
 console.log('\n=== ALL TESTS PASSED SUCCESSFULLY! ===');
