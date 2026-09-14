@@ -45,16 +45,16 @@ Experience the album with the bespoke interactive player featuring a real-time W
 | 01 | **Two Cats, Zero Pounds (Genesis at 3 AM)** | Bedroom Lo-Fi Chillhop / Intimate Vocals | D♭ Major | 78 | 🟢 **Mastered (1080p MP4)** |
 | 02 | **Feline Landlords on the Spacebar** | Playful Boom-Bap / Electric Piano Chops | B♭ Minor | 80 | 🟢 **Mastered (1080p MP4)** |
 | 03 | **Overdraft Love Letter** | **Eminem × Fresh Prince 90s Storytelling Rap** | G Minor | 92 | 🟢 **Mastered (1080p MP4)** |
-| 04 | **Coffee Stains & Broken Preamps** | Gritty 90s Boom-Bap / 60-Cycle Hum Narrative | C Minor | 85 | ⏳ **In Production** |
-| 05 | **Sent to an A&R's Ghost** | Soulful Vinyl Chop / Industry Satire | F Minor | 88 | 📋 Queued |
-| 06 | **Tuna Can Grammys** | Upbeat Philly Cookout / Celebratory Horns | E♭ Major | 95 | 📋 Queued |
-| 07 | **Four Chords, Nine Lives** | Neo-Soul Warmth / Resilient Companionship | G♭ Major | 75 | 📋 Queued |
-| 08 | **The Space Between Paychecks (Interlude)** | Ambient Rain & Solo Piano Meditation | D♭ Major | 70 | 📋 Queued |
-| 09 | **Bedroom Platinum** | High-Energy Boom-Bap / DIY Anthem | B♭ Minor | 90 | 📋 Queued |
-| 10 | **Cat Hair on the Pop Filter** | Jazzy Acoustic Swing / Muted Trumpet | E♭ Minor | 82 | 📋 Queued |
-| 11 | **Streaming for Pennies** | Sarcastic Storytelling / Tokyo Earbuds | A♭ Major | 86 | 📋 Queued |
-| 12 | **4 AM Epiphany** | Nocturnal Rhodes Atmosphere / Golden Chord | F Minor | 74 | 📋 Queued |
-| 13 | **Whispering in the Mic (Don't Wake Neighbors)** | Council Flat ASMR Close-Mic Rap | D Minor | 79 | 📋 Queued |
+| 04 | **Coffee Stains & Broken Preamps** | Gritty 90s Boom-Bap / 60-Cycle Hum Narrative | C Minor | 85 | 🟢 **Mastered (1080p MP4)** |
+| 05 | **Sent to an A&R's Ghost** | Soulful Vinyl Chop / Industry Satire | F Minor | 88 | 🟢 **Mastered (1080p MP4)** |
+| 06 | **Tuna Can Grammys** | Upbeat Philly Cookout / Celebratory Horns | E♭ Major | 95 | 🟢 **Mastered (1080p MP4)** |
+| 07 | **Four Chords, Nine Lives** | Neo-Soul Warmth / Resilient Companionship | G♭ Major | 75 | 🟢 **Mastered (1080p MP4)** |
+| 08 | **The Space Between Paychecks (Interlude)** | Ambient Rain & Solo Piano Meditation | D♭ Major | 70 | 🟢 **Mastered (1080p MP4)** |
+| 09 | **Bedroom Platinum** | High-Energy Boom-Bap / DIY Anthem | B♭ Minor | 90 | 🟢 **Mastered (1080p MP4)** |
+| 10 | **Cat Hair on the Pop Filter** | Jazzy Acoustic Swing / Muted Trumpet | E♭ Minor | 82 | 🟢 **Mastered (1080p MP4)** |
+| 11 | **Streaming for Pennies** | Sarcastic Storytelling / Tokyo Earbuds | A♭ Major | 86 | 🟢 **Mastered (1080p MP4)** |
+| 12 | **4 AM Epiphany** | Nocturnal Rhodes Atmosphere / Golden Chord | F Minor | 74 | 🟢 **Mastered (1080p MP4)** |
+| 13 | **Whispering in the Mic (Don't Wake Neighbors)** | Council Flat ASMR Close-Mic Rap | D Minor | 79 | 🟢 **Mastered (1080p MP4)** |
 | 14 | **Bounced to MP3** | Triumphant 90s Morning Celebration | G Major | 94 | 📋 Queued |
 | 15 | **Two Little Purrs in the Monitor Mix** | 40Hz Low-End Feline Resonance Meditation | B♭ Minor | 72 | 📋 Queued |
 | 16 | **Sunrise on the Interface (Outro)** | Golden Daylight Finale / Breakfast Time | D♭ Major | 75 | 📋 Queued |

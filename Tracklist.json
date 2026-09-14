@@ -106,8 +106,8 @@
       "bpm": 82,
       "key": "E♭ Minor",
       "duration": "02:15",
-      "status": "Rendering & Mastering (ComfyUI DiT)",
-      "video_file": null,
+      "status": "Mastered & Live (1080p MP4)",
+      "video_file": "10 - Cat Hair on the Pop Filter.mp4",
       "artwork": "assets/tracks/Track_10.png"
     },
     {
@@ -116,8 +116,8 @@
       "bpm": 86,
       "key": "A♭ Major",
       "duration": "02:15",
-      "status": "Queued in Autonomous Pipeline",
-      "video_file": null,
+      "status": "Mastered & Live (1080p MP4)",
+      "video_file": "11 - Streaming for Pennies.mp4",
       "artwork": "assets/tracks/Track_11.png"
     },
     {
@@ -126,8 +126,8 @@
       "bpm": 74,
       "key": "F Minor",
       "duration": "02:15",
-      "status": "Queued in Autonomous Pipeline",
-      "video_file": null,
+      "status": "Mastered & Live (1080p MP4)",
+      "video_file": "12 - 4 AM Epiphany.mp4",
       "artwork": "assets/tracks/Track_12.png"
     },
     {
@@ -136,8 +136,8 @@
       "bpm": 79,
       "key": "D Minor",
       "duration": "02:15",
-      "status": "Queued in Autonomous Pipeline",
-      "video_file": null,
+      "status": "Mastered & Live (1080p MP4)",
+      "video_file": "13 - Whispering in the Mic (Don't Wake the Neighbors).mp4",
       "artwork": "assets/tracks/Track_13.png"
     },
     {
