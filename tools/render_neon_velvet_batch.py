@@ -6,6 +6,12 @@ Autonomous Batch Neural Generation & Mastering Pipeline
 
 import os
 import sys
+if hasattr(sys.stdout, "reconfigure"):
+    try: sys.stdout.reconfigure(encoding="utf-8")
+    except Exception: pass
+if hasattr(sys.stderr, "reconfigure"):
+    try: sys.stderr.reconfigure(encoding="utf-8")
+    except Exception: pass
 import json
 import time
 import urllib.request
@@ -191,10 +197,10 @@ def master_flac_to_mp4(track_num):
     ]
     res = subprocess.run(cmd, capture_output=True, text=True)
     if res.returncode == 0 and os.path.exists(out_mp4_path):
-        print(f"✔ Mastered successfully: {out_mp4_name} ({os.path.getsize(out_mp4_path)} bytes)")
+        print(f"[OK] Mastered successfully: {out_mp4_name} ({os.path.getsize(out_mp4_path)} bytes)")
         return True
     else:
-        print(f"❌ FFmpeg error on track {spec['track_number']}: {res.stderr[:200]}")
+        print(f"[ERROR] FFmpeg error on track {spec['track_number']}: {res.stderr[:200]}")
         return False
 
 def sync_player():
