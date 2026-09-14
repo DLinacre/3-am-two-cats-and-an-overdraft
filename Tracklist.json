@@ -1,139 +1,174 @@
 {
     "album_title": "3 AM, Two Cats & An Overdraft",
     "artist": "David Linacre",
-    "phonetic_vocal_guide": "Vocals synthesized as Liniker for correct English pronunciation [\u02c8l\u026an-\u026a-k\u0259r]",
+    "phonetic_vocal_guide": "Vocals synthesized as Liniker for correct English pronunciation [ˈlɪn-ɪ-kər]",
     "year": 2026,
     "edition": "Studio Deluxe Edition",
-    "genre": "Lo-Fi Hip-Hop / Chillhop / Bedroom Soul",
+    "genre": "Lo-Fi Hip-Hop / 90s Golden-Age Boom-Bap / Bedroom Soul",
     "total_tracks": 16,
+    "streaming_url": "https://dlinacre.github.io/3-am-two-cats-and-an-overdraft/",
+    "github_repo": "https://github.com/DLinacre/3-am-two-cats-and-an-overdraft",
+    "mastering_standard": "EBU R128 (-14.0 LUFS, -1.0 dB True Peak, 320 kbps AAC)",
     "tracks": [
         {
             "track_number": 1,
             "title": "Two Cats, Zero Pounds (Genesis at 3 AM)",
             "bpm": 78,
-            "key": "D\u266d Major",
-            "theme": "The opening statement: 3 AM in the bedroom studio, overdraft warnings on the banking app, two cats sleeping across the gear, and the birth of a dream.",
-            "duration": "02:20"
+            "key": "D♭ Major",
+            "duration": "02:20",
+            "status": "Mastered & Live (1080p MP4)",
+            "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
+            "artwork": "assets/tracks/Track_01.png"
         },
         {
             "track_number": 2,
             "title": "Feline Landlords on the Spacebar",
             "bpm": 80,
-            "key": "B\u266d Minor",
-            "theme": "Every time David tries to hit play, the tabby walks across the transport controls. Swung boom-bap drums and warm Rhodes chops.",
-            "duration": "02:15"
+            "key": "B♭ Minor",
+            "duration": "02:15",
+            "status": "Mastered & Live (1080p MP4)",
+            "video_file": "02 - Feline Landlords on the Spacebar.mp4",
+            "artwork": "assets/tracks/Track_02.png"
         },
         {
             "track_number": 3,
             "title": "Overdraft Love Letter",
-            "bpm": 76,
-            "key": "E\u266d Major",
-            "theme": "A soulful ballad addressed to the automated overdraft alerts on his phone. Melodic acoustic bass and tape-saturated harmonies.",
-            "duration": "02:10"
+            "bpm": 92,
+            "key": "G Minor",
+            "duration": "02:15",
+            "status": "Mastered & Live (1080p MP4)",
+            "video_file": "03 - Overdraft Love Letter.mp4",
+            "artwork": "assets/tracks/Track_03.png"
         },
         {
             "track_number": 4,
             "title": "Coffee Stains & Broken Preamps",
-            "bpm": 82,
-            "key": "A\u266d Major",
-            "theme": "Electrical tape holding the audio interface together, cold instant coffee, and dusty vinyl crackle setting the groove.",
-            "duration": "02:15"
+            "bpm": 85,
+            "key": "C Minor",
+            "duration": "02:15",
+            "status": "Rendering & Mastering (ComfyUI DiT)",
+            "video_file": null,
+            "artwork": "assets/tracks/Track_04.png"
         },
         {
             "track_number": 5,
             "title": "Sent to an A&R's Ghost",
-            "bpm": 75,
+            "bpm": 88,
             "key": "F Minor",
-            "theme": "Dropping SoundCloud private links into unresponsive inboxes. Atmospheric electric piano and lonely late-night rain on the glass.",
-            "duration": "02:20"
+            "duration": "02:15",
+            "status": "Queued in Autonomous Pipeline",
+            "video_file": null,
+            "artwork": "assets/tracks/Track_05.png"
         },
         {
             "track_number": 6,
             "title": "Tuna Can Grammys",
-            "bpm": 84,
-            "key": "C Minor",
-            "theme": "Stacking empty gourmet cat food cans into makeshift golden trophy shapes. Witty, syncopated boom-bap rhythm with muted trumpet.",
-            "duration": "02:10"
+            "bpm": 95,
+            "key": "E♭ Major",
+            "duration": "02:15",
+            "status": "Queued in Autonomous Pipeline",
+            "video_file": null,
+            "artwork": "assets/tracks/Track_06.png"
         },
         {
             "track_number": 7,
             "title": "Four Chords, Nine Lives",
-            "bpm": 77,
-            "key": "G\u266d Major",
-            "theme": "Reflective and warm: when money is gone and the world is cold, nine feline lives and four soulful chords are all you need to survive.",
-            "duration": "02:15"
+            "bpm": 75,
+            "key": "G♭ Major",
+            "duration": "02:15",
+            "status": "Queued in Autonomous Pipeline",
+            "video_file": null,
+            "artwork": "assets/tracks/Track_07.png"
         },
         {
             "track_number": 8,
             "title": "The Space Between Paychecks (Interlude)",
             "bpm": 70,
-            "key": "D\u266d Major",
-            "theme": "Intimate solo upright piano with vintage tape flutter, purring background acoustics, and gentle rain outside.",
-            "duration": "01:45"
+            "key": "D♭ Major",
+            "duration": "01:45",
+            "status": "Queued in Autonomous Pipeline",
+            "video_file": null,
+            "artwork": "assets/tracks/Track_08.png"
         },
         {
             "track_number": 9,
             "title": "Bedroom Platinum",
-            "bpm": 80,
-            "key": "B\u266d Minor",
-            "theme": "Who needs Abbey Road when you have an RTX 3070 Ti, closed-back headphones, and unwavering dedication? Punchy kick and fat sub bass.",
-            "duration": "02:20"
+            "bpm": 90,
+            "key": "B♭ Minor",
+            "duration": "02:15",
+            "status": "Queued in Autonomous Pipeline",
+            "video_file": null,
+            "artwork": "assets/tracks/Track_09.png"
         },
         {
             "track_number": 10,
             "title": "Cat Hair on the Pop Filter",
-            "bpm": 85,
-            "key": "E\u266d Minor",
-            "theme": "Blowing cat fluff off the condenser capsule before tracking vocals. Playful, head-nodding lo-fi rhythm with jazzy guitar riffs.",
-            "duration": "02:15"
+            "bpm": 82,
+            "key": "E♭ Minor",
+            "duration": "02:15",
+            "status": "Queued in Autonomous Pipeline",
+            "video_file": null,
+            "artwork": "assets/tracks/Track_10.png"
         },
         {
             "track_number": 11,
             "title": "Streaming for Pennies",
-            "bpm": 76,
-            "key": "A\u266d Major",
-            "theme": "Calculating that 0.003 cents per stream means 10,000 plays to buy a bag of cat litter. Gritty humorous lyrics over gorgeous neo-soul chords.",
-            "duration": "02:20"
+            "bpm": 86,
+            "key": "A♭ Major",
+            "duration": "02:15",
+            "status": "Queued in Autonomous Pipeline",
+            "video_file": null,
+            "artwork": "assets/tracks/Track_11.png"
         },
         {
             "track_number": 12,
             "title": "4 AM Epiphany",
             "bpm": 74,
             "key": "F Minor",
-            "theme": "That magical hour when the whole world sleeps and the perfect chorus melody drops straight out of the sky. Dreamy chorus delays and pads.",
-            "duration": "02:15"
+            "duration": "02:15",
+            "status": "Queued in Autonomous Pipeline",
+            "video_file": null,
+            "artwork": "assets/tracks/Track_12.png"
         },
         {
             "track_number": 13,
             "title": "Whispering in the Mic (Don't Wake the Neighbors)",
-            "bpm": 78,
-            "key": "D\u266d Major",
-            "theme": "Thin bedroom walls require soft-spoken ASMR-adjacent vocal delivery that accidentally sounds like a multi-platinum intimate masterpiece.",
-            "duration": "02:15"
+            "bpm": 79,
+            "key": "D Minor",
+            "duration": "02:15",
+            "status": "Queued in Autonomous Pipeline",
+            "video_file": null,
+            "artwork": "assets/tracks/Track_13.png"
         },
         {
             "track_number": 14,
             "title": "Bounced to MP3",
-            "bpm": 83,
-            "key": "G\u266d Major",
-            "theme": "Exporting the final master at 320 kbps. Head-bobbing bounce, uplifting strings, and celebratory vocal ad-libs.",
-            "duration": "02:10"
+            "bpm": 94,
+            "key": "G Major",
+            "duration": "02:15",
+            "status": "Queued in Autonomous Pipeline",
+            "video_file": null,
+            "artwork": "assets/tracks/Track_14.png"
         },
         {
             "track_number": 15,
             "title": "Two Little Purrs in the Monitor Mix",
             "bpm": 72,
-            "key": "B\u266d Minor",
-            "theme": "Subtle feline purring embedded right into the low-end frequencies. The most comforting chillhop lullaby ever recorded.",
-            "duration": "02:15"
+            "key": "B♭ Minor",
+            "duration": "02:15",
+            "status": "Queued in Autonomous Pipeline",
+            "video_file": null,
+            "artwork": "assets/tracks/Track_15.png"
         },
         {
             "track_number": 16,
             "title": "Sunrise on the Interface (Outro)",
             "bpm": 75,
-            "key": "D\u266d Major",
-            "theme": "First morning light breaks through the blinds, illuminating the audio mixer. The cats wake up for breakfast. Another day, another masterpiece.",
-            "duration": "02:25"
+            "key": "D♭ Major",
+            "duration": "02:25",
+            "status": "Queued in Autonomous Pipeline",
+            "video_file": null,
+            "artwork": "assets/tracks/Track_16.png"
         }
     ]
 }
