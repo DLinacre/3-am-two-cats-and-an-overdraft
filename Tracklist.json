@@ -46,8 +46,8 @@
             "bpm": 85,
             "key": "C Minor",
             "duration": "02:15",
-            "status": "Rendering & Mastering (ComfyUI DiT)",
-            "video_file": null,
+            "status": "Mastered & Live (1080p MP4)",
+            "video_file": "04 - Coffee Stains & Broken Preamps.mp4",
             "artwork": "assets/tracks/Track_04.png"
         },
         {
@@ -56,7 +56,7 @@
             "bpm": 88,
             "key": "F Minor",
             "duration": "02:15",
-            "status": "Queued in Autonomous Pipeline",
+            "status": "Rendering & Mastering (ComfyUI DiT)",
             "video_file": null,
             "artwork": "assets/tracks/Track_05.png"
         },
