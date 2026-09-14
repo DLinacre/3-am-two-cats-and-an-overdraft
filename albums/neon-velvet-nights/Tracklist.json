@@ -1,0 +1,109 @@
+{
+  "album_title": "Neon Velvet Nights",
+  "artist": "David Linacre & Maya Chen",
+  "year": 2026,
+  "edition": "Uptempo Soul & 2-Step Edition",
+  "genre": "Uptempo Soul / UK Garage / Neo-Soul Funk",
+  "bpm_range": "108 - 124 BPM",
+  "vocal_architecture": "Alternating Velvet Female Lead (Maya Chen) & Crisp Male Rap/Tenor (David Linacre)",
+  "anti_repetition_directive": "Enforced progressive chorus evolution, multi-syllabic rhyme diversification, and dynamic acoustic cues",
+  "total_tracks": 8,
+  "tracks": [
+    {
+      "track_number": 1,
+      "title": "Velvet on the Concrete",
+      "bpm": 118,
+      "key": "F\u266f Minor",
+      "duration": "02:40",
+      "vocal_style": "Female Lead (Maya Chen: Silky Neo-Soul) ft. David Linacre (Crisp UKG Rap)",
+      "genre": "UK Garage 2-Step / Late-Night Soul",
+      "artwork": "albums/neon-velvet-nights/tracks/Track_01.png",
+      "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
+      "status": "Arranged & Mastered (Preview Available)"
+    },
+    {
+      "track_number": 2,
+      "title": "Midnight Espresso & Basslines",
+      "bpm": 114,
+      "key": "D Minor",
+      "duration": "02:35",
+      "vocal_style": "Male Soul Tenor (David Linacre) ft. Velvet Female Ad-Libs",
+      "genre": "Slap-Bass Neo-Soul Funk / Uptempo Groove",
+      "artwork": "albums/neon-velvet-nights/tracks/Track_02.png",
+      "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
+      "status": "Arranged & Mastered (Preview Available)"
+    },
+    {
+      "track_number": 3,
+      "title": "London Underground at 1 AM",
+      "bpm": 122,
+      "key": "A Minor",
+      "duration": "02:45",
+      "vocal_style": "High-Tempo Duet (Call & Response Harmony)",
+      "genre": "Brisk 2-Step Shuffle / Urban Storytelling",
+      "artwork": "albums/neon-velvet-nights/tracks/Track_03.png",
+      "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
+      "status": "Arranged & Mastered (Preview Available)"
+    },
+    {
+      "track_number": 4,
+      "title": "Call Me When the Master Drops",
+      "bpm": 110,
+      "key": "E\u266d Major",
+      "duration": "02:30",
+      "vocal_style": "Female Lead (Maya Chen: Seductive R&B Belting)",
+      "genre": "Glittering Neo-Soul Disco-Funk",
+      "artwork": "albums/neon-velvet-nights/tracks/Track_04.png",
+      "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
+      "status": "Arranged & Mastered (Preview Available)"
+    },
+    {
+      "track_number": 5,
+      "title": "Two Keys, One Ignition",
+      "bpm": 124,
+      "key": "B Minor",
+      "duration": "02:38",
+      "vocal_style": "Male Rap Verses + Female Harmonized Anthem Hook",
+      "genre": "Driving Speed Garage / 90s Vocal House",
+      "artwork": "albums/neon-velvet-nights/tracks/Track_05.png",
+      "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
+      "status": "Arranged & Mastered (Preview Available)"
+    },
+    {
+      "track_number": 6,
+      "title": "Tape Saturation Heartbreak",
+      "bpm": 108,
+      "key": "C Minor",
+      "duration": "02:42",
+      "vocal_style": "Warm Intimate Duet (Close-Mic Bedroom Soul)",
+      "genre": "Warm Rhodes Neo-Soul Bounce",
+      "artwork": "albums/neon-velvet-nights/tracks/Track_06.png",
+      "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
+      "status": "Arranged & Mastered (Preview Available)"
+    },
+    {
+      "track_number": 7,
+      "title": "Catch the Night Bus Home",
+      "bpm": 120,
+      "key": "G Minor",
+      "duration": "02:36",
+      "vocal_style": "Conversational Interplay (Male Verse, Female Bridge)",
+      "genre": "Syncopated 2-Step Bassline / UK Garage",
+      "artwork": "albums/neon-velvet-nights/tracks/Track_07.png",
+      "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
+      "status": "Arranged & Mastered (Preview Available)"
+    },
+    {
+      "track_number": 8,
+      "title": "Sunrise in Soho",
+      "bpm": 116,
+      "key": "D\u266d Major",
+      "duration": "02:50",
+      "vocal_style": "Dual Soaring Soul Harmonies (Full Ensemble Chorus)",
+      "genre": "Euphoric Soulful House Outro",
+      "artwork": "albums/neon-velvet-nights/tracks/Track_08.png",
+      "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
+      "status": "Arranged & Mastered (Preview Available)"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "artist": "David Linacre",
+  "default_album": "3-am-two-cats-overdraft",
+  "total_albums": 2,
+  "albums": [
+    {
+      "id": "3-am-two-cats-overdraft",
+      "title": "3 AM, Two Cats & An Overdraft",
+      "edition": "Studio Deluxe Edition",
+      "year": 2026,
+      "genre": "Lo-Fi Hip-Hop / 90s Boom-Bap / Bedroom Soul",
+      "bpm_range": "70 - 95 BPM",
+      "vocals": "David Linacre (Male Lead / Phone Spoken / Storytelling)",
+      "total_tracks": 16,
+      "cover": "Cover.png",
+      "banner": "banner.png",
+      "tracklist_file": "Tracklist.json",
+      "lyrics_file": "assets/lyrics/ALL_LYRICS.json",
+      "media_root": "./",
+      "description": "The gritty, hilarious, and deeply soulful reality of independent bedroom music production: an audio interface held together by electrical tape, an overdraft warning on the banking app, and two feline landlords demanding gourmet salmon on the spacebar."
+    },
+    {
+      "id": "neon-velvet-nights",
+      "title": "Neon Velvet Nights",
+      "edition": "Uptempo Soul & 2-Step Edition",
+      "year": 2026,
+      "genre": "Uptempo Soul / UK Garage / Neo-Soul Funk",
+      "bpm_range": "108 - 124 BPM",
+      "vocals": "David Linacre & Maya Chen (Velvet Female Vocals & Crisp Male Rap Duets)",
+      "total_tracks": 8,
+      "cover": "albums/neon-velvet-nights/Cover.png",
+      "banner": "albums/neon-velvet-nights/banner.png",
+      "tracklist_file": "albums/neon-velvet-nights/Tracklist.json",
+      "lyrics_file": "albums/neon-velvet-nights/lyrics/ALL_LYRICS.json",
+      "media_root": "albums/neon-velvet-nights/",
+      "description": "High-energy late-night urban groove: snappy 2-step beats, lush Fender Rhodes chords, slapped funk basslines, and velvety male-female vocal duets with dynamic anti-repetitive storytelling."
+    }
+  ]
+}
