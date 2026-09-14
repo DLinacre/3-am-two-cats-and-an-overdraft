@@ -1,0 +1,21 @@
+name: Bug Report
+description: Report a broken feature, playback issue, or UI defect in the album player
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for reporting an issue with *3 AM, Two Cats & An Overdraft*."
+  - type: input
+    id: browser
+    attributes:
+      label: Browser & Operating System
+      placeholder: e.g. Chrome 128 on macOS, Safari on iOS
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Bug
+      placeholder: What happened when you tried to play a track?
+    validations:
+      required: true

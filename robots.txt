@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /*.png
+Allow: /*.svg
+Allow: /Tracklist.json
+Allow: /manifest.json
+
+Sitemap: https://dlinacre.github.io/3-am-two-cats-and-an-overdraft/sitemap.xml

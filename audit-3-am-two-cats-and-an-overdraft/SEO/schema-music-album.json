@@ -1,0 +1,116 @@
+{
+  "@context": "https://schema.org",
+  "@type": "MusicAlbum",
+  "name": "3 AM, Two Cats & An Overdraft (Studio Deluxe Edition)",
+  "byArtist": {
+    "@type": "MusicGroup",
+    "name": "David Linacre"
+  },
+  "genre": [
+    "Lo-Fi Hip-Hop",
+    "90s Boom-Bap",
+    "Bedroom Soul"
+  ],
+  "numTracks": 16,
+  "datePublished": "2026-09-14",
+  "image": "https://dlinacre.github.io/3-am-two-cats-and-an-overdraft/Cover.png",
+  "url": "https://dlinacre.github.io/3-am-two-cats-and-an-overdraft/",
+  "track": [
+    {
+      "@type": "MusicRecording",
+      "name": "Two Cats, Zero Pounds (Genesis at 3 AM)",
+      "position": 1,
+      "duration": "PT2M20S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Feline Landlords on the Spacebar",
+      "position": 2,
+      "duration": "PT2M15S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Overdraft Love Letter",
+      "position": 3,
+      "duration": "PT2M15S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Coffee Stains & Broken Preamps",
+      "position": 4,
+      "duration": "PT2M15S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Sent to an A&R's Ghost",
+      "position": 5,
+      "duration": "PT2M15S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Tuna Can Grammys",
+      "position": 6,
+      "duration": "PT2M15S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Four Chords, Nine Lives",
+      "position": 7,
+      "duration": "PT2M15S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "The Space Between Paychecks (Interlude)",
+      "position": 8,
+      "duration": "PT1M45S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Bedroom Platinum",
+      "position": 9,
+      "duration": "PT2M15S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Cat Hair on the Pop Filter",
+      "position": 10,
+      "duration": "PT2M15S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Streaming for Pennies",
+      "position": 11,
+      "duration": "PT2M15S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "4 AM Epiphany",
+      "position": 12,
+      "duration": "PT2M15S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Whispering in the Mic (Don't Wake the Neighbors)",
+      "position": 13,
+      "duration": "PT2M15S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Bounced to MP3",
+      "position": 14,
+      "duration": "PT2M15S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Two Little Purrs in the Monitor Mix",
+      "position": 15,
+      "duration": "PT2M15S"
+    },
+    {
+      "@type": "MusicRecording",
+      "name": "Sunrise on the Interface (Outro)",
+      "position": 16,
+      "duration": "PT2M25S"
+    }
+  ]
+}
