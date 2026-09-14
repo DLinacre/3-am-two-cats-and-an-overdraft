@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <circle cx="50" cy="50" r="46" fill="#1c1917" stroke="#f59e0b" stroke-width="3"/>
+  <!-- Cat 1 (Tabby) -->
+  <path d="M26 65 Q26 42 40 42 Q54 42 54 65 Z" fill="#78350f"/>
+  <polygon points="28,44 32,28 40,42" fill="#d97706"/>
+  <circle cx="35" cy="50" r="2.5" fill="#fef08a"/>
+  <!-- Cat 2 (Tuxedo) -->
+  <path d="M46 68 Q46 45 62 45 Q78 45 78 68 Z" fill="#09090b"/>
+  <polygon points="68,47 76,32 78,48" fill="#27272a"/>
+  <circle cx="56" cy="53" r="2.5" fill="#86efac"/>
+  <circle cx="68" cy="53" r="2.5" fill="#86efac"/>
+  <!-- Whiskers -->
+  <line x1="22" y1="52" x2="30" y2="52" stroke="#fef3c7" stroke-width="1.5"/>
+  <line x1="72" y1="55" x2="82" y2="55" stroke="#fef3c7" stroke-width="1.5"/>
+</svg>
