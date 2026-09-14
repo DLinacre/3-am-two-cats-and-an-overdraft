@@ -1,0 +1,92 @@
+{
+  "1": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "Juggernaut-XL_v9.safetensors"
+    }
+  },
+  "2": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "sdxl_vae.safetensors"
+    }
+  },
+  "3": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "1",
+        1
+      ],
+      "text": "cinematic 16:9 masterpiece, lo-fi chillhop anime aesthetic, a cozy bedroom music studio at 3 AM, young male musician with messy brown hair sitting at a glowing electric piano keyboard with headphones on, two cute cats: one sleeping curled up peacefully on the desk and another sitting on a monitor speaker looking out the window, rain streaming down the window pane with warm city night bokeh and neon lights, glowing audio mixer interface on monitor, warm desk lamp lighting, vinyl records, tape cassettes, empty tuna tin, intimate atmosphere, 8k uhd, soft nostalgic colors, Studio Ghibli and Makoto Shinkai inspired lighting"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "1",
+        1
+      ],
+      "text": "blurry, low quality, disfigured, bad anatomy, deformed hands, distorted face, extra limbs, ugly, text, watermark, signature, oversaturated, harsh lighting"
+    }
+  },
+  "5": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 1344,
+      "height": 768,
+      "batch_size": 1
+    }
+  },
+  "6": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "positive": [
+        "3",
+        0
+      ],
+      "negative": [
+        "4",
+        0
+      ],
+      "latent_image": [
+        "5",
+        0
+      ],
+      "seed": 777123,
+      "steps": 25,
+      "cfg": 6.5,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1.0
+    }
+  },
+  "7": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "6",
+        0
+      ],
+      "vae": [
+        "2",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "David_Liniker_Art",
+      "images": [
+        "7",
+        0
+      ]
+    }
+  }
+}
