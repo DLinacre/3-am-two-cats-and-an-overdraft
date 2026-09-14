@@ -19,7 +19,7 @@
       "genre": "UK Garage 2-Step / Late-Night Soul",
       "artwork": "albums/neon-velvet-nights/tracks/Track_01.png",
       "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
-      "status": "Arranged & Mastered (Preview Available)"
+      "status": "In Production (Queued in ComfyUI DiT Pipeline)"
     },
     {
       "track_number": 2,
@@ -31,7 +31,7 @@
       "genre": "Slap-Bass Neo-Soul Funk / Uptempo Groove",
       "artwork": "albums/neon-velvet-nights/tracks/Track_02.png",
       "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
-      "status": "Arranged & Mastered (Preview Available)"
+      "status": "In Production (Queued in ComfyUI DiT Pipeline)"
     },
     {
       "track_number": 3,
@@ -43,7 +43,7 @@
       "genre": "Brisk 2-Step Shuffle / Urban Storytelling",
       "artwork": "albums/neon-velvet-nights/tracks/Track_03.png",
       "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
-      "status": "Arranged & Mastered (Preview Available)"
+      "status": "In Production (Queued in ComfyUI DiT Pipeline)"
     },
     {
       "track_number": 4,
@@ -55,7 +55,7 @@
       "genre": "Glittering Neo-Soul Disco-Funk",
       "artwork": "albums/neon-velvet-nights/tracks/Track_04.png",
       "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
-      "status": "Arranged & Mastered (Preview Available)"
+      "status": "In Production (Queued in ComfyUI DiT Pipeline)"
     },
     {
       "track_number": 5,
@@ -67,7 +67,7 @@
       "genre": "Driving Speed Garage / 90s Vocal House",
       "artwork": "albums/neon-velvet-nights/tracks/Track_05.png",
       "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
-      "status": "Arranged & Mastered (Preview Available)"
+      "status": "In Production (Queued in ComfyUI DiT Pipeline)"
     },
     {
       "track_number": 6,
@@ -79,7 +79,7 @@
       "genre": "Warm Rhodes Neo-Soul Bounce",
       "artwork": "albums/neon-velvet-nights/tracks/Track_06.png",
       "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
-      "status": "Arranged & Mastered (Preview Available)"
+      "status": "In Production (Queued in ComfyUI DiT Pipeline)"
     },
     {
       "track_number": 7,
@@ -91,7 +91,7 @@
       "genre": "Syncopated 2-Step Bassline / UK Garage",
       "artwork": "albums/neon-velvet-nights/tracks/Track_07.png",
       "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
-      "status": "Arranged & Mastered (Preview Available)"
+      "status": "In Production (Queued in ComfyUI DiT Pipeline)"
     },
     {
       "track_number": 8,
@@ -103,7 +103,7 @@
       "genre": "Euphoric Soulful House Outro",
       "artwork": "albums/neon-velvet-nights/tracks/Track_08.png",
       "video_file": "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4",
-      "status": "Arranged & Mastered (Preview Available)"
+      "status": "In Production (Queued in ComfyUI DiT Pipeline)"
     }
   ]
 }

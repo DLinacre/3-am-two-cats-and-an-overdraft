@@ -1,0 +1,107 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_music3_dit_fp16.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "minimax_music3_text_encoder_pruned_int8_convrot.safetensors",
+      "type": "minimax"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_music3_dav.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "MiniMaxMusic3TextEncode",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "caption": "Hushed ASMR intimate close-mic rap, 79 BPM, D minor, velvet whispered delivery, paper-thin wall council flat story.\nVocal profile: Ultra-intimate close-mic whispering, rhythmic consonant click, warm proximity effect, dynamic hushed cadence.\nAtmosphere: Council flat bedroom studio, fear of the ceiling broom tap, covert late-night creation.",
+      "lyrics": "[Intro]\n(whispered ASMR tone, lips right on the capsule grille)\nShh... keep it down.\nMrs. Higgins in flat 4B has got super-hearing.\nDavid Liniker, track thirteen... whispered stealth mode.\n\n[Verse 1]\n(ultra-close whisper-rap, crisp clicking consonants)\nPaper-thin walls in this Victorian conversion\nAny loud snare is a criminal excursion\nIf I drop a heavy kick or I belt out a chorus\nMrs. Higgins bangs her broom like a raging brontosaurus!\nSo I lean into the grille with a two-millimeter gap\nDelivering the world's most intimate rap!\nVelvet quiet cadence drifting through the air\nSounds like a confession in a midnight prayer!\nTabby\u2019s walking on his tiptoes across the wooden floor\nEnsuring that we don't disturb the tenant next door!\n\n[Chorus]\n(soft multi-layered whispered harmony, brushed drum beat)\nWhispering in the mic so the neighbors don't complain\nTurning quiet bedroom secrets into falling rain\nSometimes the softest voice carries furthest away\nSpeaking to the hearts that are waiting for the day!\nLiniker whispering with passion in the dark...\nLeaving our indelible mark!\n\n[Verse 2]\nMicrophone gain cranked up to ninety-five\nCapturing every breath that proves we're alive\nYou can hear the radiator clanking in the hall\nYou can hear the midnight shadows dancing on the wall\nWe turned our limitations to our greatest artistic grace\nThe quietest boom-bap in the human race!\n\n[Chorus]\nWhispering in the mic so the neighbors don't complain\nTurning quiet bedroom secrets into falling rain\nSometimes the softest voice carries furthest away\nSpeaking to the hearts that are waiting for the day!\nLiniker whispering with passion in the dark...\nLeaving our indelible mark!\n\n[Outro]\n(quiet chuckle, muffled footsteps upstairs)\nShh... she\u2019s turning over in bed.\nGoodnight, Mrs. Higgins.\nLiniker... stealth mode complete.\n(microphone mute click)",
+      "seed": 98777,
+      "max_duration": 135.0,
+      "cfg_scale": 1.35,
+      "top_k": 50
+    }
+  },
+  "5": {
+    "class_type": "EmptyMiniMaxMusic3LatentAudio",
+    "inputs": {
+      "seconds": [
+        "4",
+        1
+      ],
+      "batch_size": 1
+    }
+  },
+  "6": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "4",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "positive": [
+        "4",
+        0
+      ],
+      "negative": [
+        "6",
+        0
+      ],
+      "latent_image": [
+        "5",
+        0
+      ],
+      "seed": 98777,
+      "steps": 32,
+      "cfg": 1.35,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0
+    }
+  },
+  "8": {
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "7",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "9": {
+    "class_type": "SaveAudioAdvanced",
+    "inputs": {
+      "audio": [
+        "8",
+        0
+      ],
+      "filename_prefix": "audio/Track13_Whispering_in_the_Mi",
+      "format": "flac"
+    }
+  }
+}

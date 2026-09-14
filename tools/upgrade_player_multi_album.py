@@ -59,10 +59,23 @@ for t in album1_tl["tracks"]:
 
 # Format album 2 processed tracks
 album2_tracks = []
+existing_album2_mp4s = set(f for f in os.listdir(album2_dir) if f.endswith(".mp4")) if os.path.exists(album2_dir) else set()
+
 for t in album2_tl["tracks"]:
     import urllib.parse
-    # Preview uses track 1 video or specified file
-    src_file = "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4"
+    clean_title = t['title'].replace(':', ' -').replace('/', '-').replace('?', '')
+    expected_vfile = f"{t['track_number']:02d} - {clean_title}.mp4"
+    
+    if expected_vfile in existing_album2_mp4s:
+        src_file = f"albums/neon-velvet-nights/{expected_vfile}"
+        ready = True
+    elif expected_vfile in existing_mp4s:
+        src_file = expected_vfile
+        ready = True
+    else:
+        src_file = "01 - Two Cats, Zero Pounds (Genesis at 3 AM).mp4"
+        ready = False
+
     album2_tracks.append({
         "num": t["track_number"],
         "title": t["title"],
@@ -71,7 +84,7 @@ for t in album2_tl["tracks"]:
         "duration": t["duration"],
         "art": t.get("artwork") or f"albums/neon-velvet-nights/tracks/Track_{t['track_number']:02d}.png",
         "src": urllib.parse.quote(src_file),
-        "ready": True
+        "ready": ready
     })
 
 albums_data = {
@@ -243,7 +256,7 @@ new_script_content = f"""
         row.className = `track-row ${{idx === currentIndex ? 'active' : ''}}`;
         const badgeHtml = t.ready 
           ? '<span style="display:inline-block;padding:2px 6px;border-radius:6px;font-size:10px;font-weight:700;background:rgba(16,185,129,0.15);color:#10b981;border:1px solid rgba(16,185,129,0.3);margin-left:8px;">MASTER</span>' 
-          : '<span style="display:inline-block;padding:2px 6px;border-radius:6px;font-size:10px;font-weight:600;background:rgba(245,158,11,0.15);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);margin-left:8px;">STUDIO</span>';
+          : '<span style="display:inline-block;padding:2px 6px;border-radius:6px;font-size:10px;font-weight:600;background:rgba(245,158,11,0.15);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);margin-left:8px;">IN PRODUCTION</span>';
         row.innerHTML = `
           <div class="track-art-thumb">
             <img src="${{t.art}}" alt="Art" onerror="this.src='Cover.png'"/>
@@ -270,7 +283,14 @@ new_script_content = f"""
     function loadTrack(idx) {{
       currentIndex = idx;
       const t = tracks[idx];
-      document.getElementById('currentTrackNum').innerText = String(t.num).padStart(2, '0');
+      const nowPlayingTag = document.querySelector('.now-playing-tag');
+      if (nowPlayingTag) {{
+        nowPlayingTag.innerHTML = t.ready
+          ? `<span class="pulsing-dot"></span> NOW PLAYING // TRACK <span id="currentTrackNum">${{String(t.num).padStart(2, '0')}}</span>`
+          : `<span class="pulsing-dot" style="background:#f59e0b;box-shadow:0 0 10px #f59e0b;"></span> PREVIEW ONLY (IN PRODUCTION) // TRACK <span id="currentTrackNum">${{String(t.num).padStart(2, '0')}}</span>`;
+      }} else {{
+        document.getElementById('currentTrackNum').innerText = String(t.num).padStart(2, '0');
+      }}
       document.getElementById('currentTrackTitle').innerText = t.title;
       document.getElementById('currentTrackKey').innerText = t.key;
       document.getElementById('currentTrackBpm').innerText = `${{t.bpm}} BPM`;
