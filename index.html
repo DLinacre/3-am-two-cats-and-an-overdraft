@@ -3,239 +3,191 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Linacre — 3 AM, Two Cats & An Overdraft (2026) [Studio Deluxe Edition]</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icon-192.png">
+  <link rel="manifest" href="manifest.json">
   <meta property="og:title" content="David Linacre — 3 AM, Two Cats & An Overdraft (2026)">
   <meta property="og:description" content="16-Track Lo-Fi Chillhop Album with Master 1080p MP4 Music Videos & Live Visualizer">
   <meta property="og:image" content="assets/og_image.png">
   <meta property="og:type" content="music.album">
-  <title>David Linacre — 3 AM, Two Cats & An Overdraft (2026) [Studio Deluxe]</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --bg-primary: #0a0b10;
-      --bg-surface: #12151f;
-      --bg-card: rgba(22, 27, 40, 0.7);
-      --bg-card-hover: rgba(32, 39, 58, 0.85);
+      --bg-primary: #08090d;
+      --bg-surface: #10121a;
+      --bg-card: rgba(18, 22, 34, 0.75);
+      --bg-card-hover: rgba(30, 36, 54, 0.9);
       --accent: #f59e0b;
-      --accent-glow: rgba(245, 158, 11, 0.35);
+      --accent-glow: rgba(245, 158, 11, 0.4);
       --accent-bright: #fbbf24;
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
       --text-dim: #64748b;
       --border: rgba(255, 255, 255, 0.08);
-      --border-accent: rgba(245, 158, 11, 0.3);
-      --radius: 16px;
+      --border-accent: rgba(245, 158, 11, 0.35);
+      --radius: 18px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       background-color: var(--bg-primary);
       color: var(--text-main);
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       overflow-x: hidden;
       background-image: 
-        radial-gradient(circle at 15% 20%, rgba(245, 158, 11, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 85% 75%, rgba(99, 102, 241, 0.06) 0%, transparent 45%);
+        radial-gradient(circle at 10% 15%, rgba(245, 158, 11, 0.09) 0%, transparent 45%),
+        radial-gradient(circle at 90% 80%, rgba(99, 102, 241, 0.07) 0%, transparent 50%);
     }
 
-    /* Top Navigation Bar */
     header {
-      padding: 20px 40px;
+      padding: 18px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(20px);
+      backdrop-filter: blur(24px);
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(10, 11, 16, 0.8);
+      background: rgba(8, 9, 13, 0.85);
     }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
+    .brand { display: flex; align-items: center; gap: 14px; }
     .brand-logo {
-      width: 38px;
-      height: 38px;
+      width: 40px; height: 40px;
       background: linear-gradient(135deg, var(--accent), #d97706);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 18px;
-      color: #000;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 18px; color: #000;
       box-shadow: 0 4px 20px var(--accent-glow);
     }
+    .brand-title { font-size: 19px; font-weight: 800; letter-spacing: -0.5px; }
+    .brand-sub { font-size: 12px; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; }
 
-    .brand-title {
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-    }
-
-    .brand-sub {
-      font-size: 12px;
-      color: var(--text-muted);
-      font-family: 'JetBrains Mono', monospace;
-    }
-
-    .header-badges {
-      display: flex;
-      gap: 10px;
-    }
-
+    .header-actions { display: flex; gap: 12px; align-items: center; }
     .badge {
-      padding: 6px 14px;
-      border-radius: 30px;
-      font-size: 12px;
-      font-weight: 600;
+      padding: 6px 14px; border-radius: 30px; font-size: 12px; font-weight: 600;
+      border: 1px solid var(--border); background: rgba(255, 255, 255, 0.03);
+      color: var(--text-muted); display: flex; align-items: center; gap: 6px;
+    }
+    .badge.active {
+      border-color: var(--border-accent); color: var(--accent); background: rgba(245, 158, 11, 0.12);
+    }
+
+    .btn-tab {
+      background: rgba(255, 255, 255, 0.04);
       border: 1px solid var(--border);
-      background: rgba(255, 255, 255, 0.03);
-      color: var(--text-muted);
+      color: var(--text-main);
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+    .btn-tab:hover, .btn-tab.active {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
     }
 
-    .badge.active {
-      border-color: var(--border-accent);
-      color: var(--accent);
-      background: rgba(245, 158, 11, 0.1);
-    }
-
-    /* Main Content Layout */
     main {
       flex: 1;
-      max-width: 1440px;
+      max-width: 1520px;
       margin: 0 auto;
       width: 100%;
-      padding: 40px;
+      padding: 36px 40px;
       display: grid;
-      grid-template-columns: 1fr 420px;
-      gap: 40px;
+      grid-template-columns: 1fr 440px;
+      gap: 36px;
     }
 
-    @media (max-width: 1100px) {
-      main {
-        grid-template-columns: 1fr;
-      }
+    @media (max-width: 1150px) {
+      main { grid-template-columns: 1fr; padding: 20px; }
     }
 
-    /* Video Player & Stage */
-    .player-stage {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
+    /* Player Stage */
+    .player-stage { display: flex; flex-direction: column; gap: 20px; }
 
-    .video-viewport {
+    .video-viewport-wrap {
+      position: relative;
       width: 100%;
-      aspect-ratio: 16 / 9;
-      background: #000;
       border-radius: var(--radius);
       overflow: hidden;
-      position: relative;
       border: 1px solid var(--border);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 40px rgba(245, 158, 11, 0.1);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 50px rgba(245, 158, 11, 0.12);
+      aspect-ratio: 16 / 9;
+      background: #000;
+    }
+
+    /* Ambient Glow Behind Video */
+    .ambient-glow {
+      position: absolute;
+      inset: -20px;
+      background: radial-gradient(circle at center, rgba(245, 158, 11, 0.25), transparent 70%);
+      filter: blur(40px);
+      z-index: -1;
+      opacity: 0.8;
+      transition: opacity 0.5s;
     }
 
     video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+      width: 100%; height: 100%; object-fit: cover; display: block;
     }
 
-    /* Live Audio Visualizer Overlay on Top of Canvas */
     .visualizer-canvas {
       position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 90px;
-      pointer-events: none;
-      opacity: 0.85;
+      bottom: 0; left: 0; width: 100%; height: 95px;
+      pointer-events: none; opacity: 0.88;
     }
 
-    /* Video Info Section */
+    /* Track Meta Bar */
     .track-meta {
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 24px 28px;
+      padding: 22px 28px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      backdrop-filter: blur(12px);
-    }
-
-    .meta-left {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
+      backdrop-filter: blur(16px);
     }
 
     .now-playing-tag {
-      font-size: 11px;
-      font-family: 'JetBrains Mono', monospace;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      font-size: 11px; font-family: 'JetBrains Mono', monospace;
+      color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px;
+      display: flex; align-items: center; gap: 8px; margin-bottom: 6px;
     }
-
     .pulsing-dot {
-      width: 8px;
-      height: 8px;
-      background: var(--accent);
-      border-radius: 50%;
-      box-shadow: 0 0 10px var(--accent);
-      animation: pulse 1.6s infinite ease-in-out;
+      width: 8px; height: 8px; background: var(--accent);
+      border-radius: 50%; box-shadow: 0 0 10px var(--accent);
+      animation: pulse 1.5s infinite ease-in-out;
     }
-
     @keyframes pulse {
       0%, 100% { opacity: 0.3; transform: scale(0.8); }
       50% { opacity: 1; transform: scale(1.2); }
     }
 
-    .track-title {
-      font-size: 26px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-    }
+    .track-title { font-size: 26px; font-weight: 800; letter-spacing: -0.5px; }
+    .artist-name { font-size: 14px; color: var(--text-muted); font-weight: 500; margin-top: 3px; }
 
-    .artist-name {
-      font-size: 15px;
-      color: var(--text-muted);
-      font-weight: 500;
-    }
+    .meta-badges { display: flex; gap: 10px; }
 
-    .meta-badges {
-      display: flex;
-      gap: 12px;
-    }
-
-    /* Custom Media Controls */
+    /* Controls Bar */
     .controls-bar {
       background: var(--bg-surface);
       border: 1px solid var(--border);
@@ -243,235 +195,141 @@
       padding: 16px 24px;
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 18px;
     }
 
     .btn-circle {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
+      width: 44px; height: 44px; border-radius: 50%;
       background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: all 0.2s ease;
+      border: 1px solid var(--border); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: all 0.2s ease;
     }
-
     .btn-circle:hover {
-      background: var(--accent);
-      color: #000;
-      border-color: var(--accent);
-      transform: scale(1.05);
+      background: var(--accent); color: #000; border-color: var(--accent);
+      transform: scale(1.06);
     }
-
     .btn-circle.play-btn {
-      width: 52px;
-      height: 52px;
-      background: var(--accent);
-      color: #000;
-      border: none;
-      box-shadow: 0 4px 20px var(--accent-glow);
+      width: 54px; height: 54px; background: var(--accent); color: #000;
+      border: none; box-shadow: 0 4px 25px var(--accent-glow);
     }
-
     .btn-circle.play-btn:hover {
-      transform: scale(1.08);
-      background: var(--accent-bright);
+      transform: scale(1.08); background: var(--accent-bright);
     }
 
     .scrubber-container {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      gap: 12px;
+      flex: 1; display: flex; align-items: center; gap: 12px;
     }
-
     .time-label {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 12px;
-      color: var(--text-dim);
-      min-width: 44px;
+      font-family: 'JetBrains Mono', monospace; font-size: 12px;
+      color: var(--text-dim); min-width: 44px;
     }
-
     .progress-bar-wrap {
-      flex: 1;
-      height: 6px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 4px;
-      cursor: pointer;
-      position: relative;
+      flex: 1; height: 6px; background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px; cursor: pointer; position: relative;
     }
-
     .progress-fill {
-      height: 100%;
-      background: linear-gradient(90deg, var(--accent), var(--accent-bright));
-      border-radius: 4px;
-      width: 0%;
-      position: relative;
+      height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+      border-radius: 4px; width: 0%; position: relative;
     }
-
     .progress-fill::after {
-      content: '';
-      position: absolute;
-      right: -5px;
-      top: -4px;
-      width: 14px;
-      height: 14px;
-      background: #fff;
-      border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      opacity: 0;
-      transition: opacity 0.15s;
+      content: ''; position: absolute; right: -5px; top: -4px;
+      width: 14px; height: 14px; background: #fff; border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); opacity: 0; transition: opacity 0.15s;
     }
+    .progress-bar-wrap:hover .progress-fill::after { opacity: 1; }
 
-    .progress-bar-wrap:hover .progress-fill::after {
-      opacity: 1;
-    }
-
-    /* Playlist Section */
-    .playlist-card {
+    /* Right Side Tabs: Playlist & Lyrics */
+    .sidebar-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      backdrop-filter: blur(16px);
-      height: 800px;
+      backdrop-filter: blur(18px);
+      height: 860px;
     }
 
-    .playlist-header {
-      padding: 24px;
+    .sidebar-header {
+      padding: 20px 24px;
       border-bottom: 1px solid var(--border);
       display: flex;
-      gap: 18px;
+      justify-content: space-between;
       align-items: center;
     }
 
-    .album-art-thumb {
-      width: 72px;
-      height: 72px;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid var(--border-accent);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-      flex-shrink: 0;
+    .tab-switch-group {
+      display: flex;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
     }
-
-    .album-art-thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .album-title-text {
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 1.3;
-    }
-
-    .album-artist-sub {
+    .tab-btn {
+      padding: 6px 16px;
+      border-radius: 8px;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
       font-size: 13px;
-      color: var(--accent);
       font-weight: 600;
-      margin-top: 4px;
-    }
-
-    .playlist-scroll {
-      flex: 1;
-      overflow-y: auto;
-      padding: 12px;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .playlist-scroll::-webkit-scrollbar {
-      width: 6px;
-    }
-
-    .playlist-scroll::-webkit-scrollbar-thumb {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 3px;
-    }
-
-    .track-row {
-      display: flex;
-      align-items: center;
-      padding: 12px 16px;
-      border-radius: 12px;
       cursor: pointer;
       transition: all 0.2s ease;
-      gap: 14px;
-      border: 1px solid transparent;
+    }
+    .tab-btn.active {
+      background: var(--accent);
+      color: #000;
     }
 
-    .track-row:hover {
-      background: var(--bg-card-hover);
-      border-color: rgba(255, 255, 255, 0.05);
-      transform: translateX(4px);
-    }
-
-    .track-row.active {
-      background: rgba(245, 158, 11, 0.12);
-      border-color: var(--border-accent);
-    }
-
-    .row-num {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 13px;
-      color: var(--text-dim);
-      width: 22px;
-    }
-
-    .track-row.active .row-num {
-      color: var(--accent);
-      font-weight: 700;
-    }
-
-    .row-info {
+    .sidebar-content-area {
       flex: 1;
-      overflow: hidden;
+      overflow-y: auto;
+      padding: 14px;
+    }
+    .sidebar-content-area::-webkit-scrollbar { width: 6px; }
+    .sidebar-content-area::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.12); border-radius: 3px;
     }
 
-    .row-title {
-      font-size: 14px;
-      font-weight: 600;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    /* Track Item */
+    .track-row {
+      display: flex; align-items: center; padding: 10px 14px;
+      border-radius: 12px; cursor: pointer; transition: all 0.2s ease;
+      gap: 12px; border: 1px solid transparent; margin-bottom: 4px;
+    }
+    .track-row:hover {
+      background: var(--bg-card-hover); border-color: rgba(255, 255, 255, 0.05);
+      transform: translateX(3px);
+    }
+    .track-row.active {
+      background: rgba(245, 158, 11, 0.12); border-color: var(--border-accent);
     }
 
-    .track-row.active .row-title {
-      color: var(--accent-bright);
+    .track-art-thumb {
+      width: 44px; height: 44px; border-radius: 8px; overflow: hidden;
+      flex-shrink: 0; border: 1px solid rgba(255, 255, 255, 0.1);
     }
+    .track-art-thumb img { width: 100%; height: 100%; object-fit: cover; }
 
-    .row-sub {
-      font-size: 11px;
-      color: var(--text-dim);
-      margin-top: 2px;
-      font-family: 'JetBrains Mono', monospace;
+    .row-info { flex: 1; overflow: hidden; }
+    .row-title { font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .track-row.active .row-title { color: var(--accent-bright); }
+    .row-sub { font-size: 11px; color: var(--text-dim); margin-top: 2px; font-family: 'JetBrains Mono', monospace; }
+    .row-duration { font-size: 12px; font-family: 'JetBrains Mono', monospace; color: var(--text-dim); }
+
+    /* Lyrics Box */
+    .lyrics-view {
+      padding: 16px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #e2e8f0;
+      white-space: pre-wrap;
+      display: none;
     }
+    .lyrics-view.active { display: block; }
 
-    .row-duration {
-      font-size: 12px;
-      font-family: 'JetBrains Mono', monospace;
-      color: var(--text-dim);
-    }
-
-    .row-badge {
-      font-size: 9px;
-      padding: 2px 6px;
-      border-radius: 4px;
-      background: rgba(245, 158, 11, 0.2);
-      color: var(--accent);
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-    /* Footer */
     footer {
       padding: 24px 40px;
       border-top: 1px solid var(--border);
@@ -481,17 +339,10 @@
       font-size: 13px;
       color: var(--text-dim);
     }
-
     .footer-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin-left: 20px;
-      transition: color 0.2s;
+      color: var(--text-muted); text-decoration: none; margin-left: 20px; transition: color 0.2s;
     }
-
-    .footer-links a:hover {
-      color: var(--accent);
-    }
+    .footer-links a:hover { color: var(--accent); }
   </style>
 </head>
 <body>
@@ -501,33 +352,33 @@
       <div class="brand-logo">DL</div>
       <div>
         <div class="brand-title">David Linacre</div>
-        <div class="brand-sub">Studio Master Edition (2026)</div>
+        <div class="brand-sub">3 AM, Two Cats & An Overdraft (2026)</div>
       </div>
     </div>
-    <div class="header-badges">
-      <div class="badge active">● Live Web Player</div>
-      <div class="badge">EBU R128 Mastered</div>
-      <div class="badge">24-Bit / 44.1 kHz</div>
+    <div class="header-actions">
+      <div class="badge active">● Studio Player</div>
+      <div class="badge">EBU R128 (-14 LUFS)</div>
+      <a href="assets/press_kit/PRESS_KIT.md" target="_blank" class="btn-tab">Press Kit</a>
     </div>
   </header>
 
   <main>
-    <!-- Left: Stage & Controls -->
     <div class="player-stage">
-      <div class="video-viewport">
-        <video id="mainVideo" playsinline autoplay loop>
+      <div class="video-viewport-wrap">
+        <div class="ambient-glow" id="ambientGlow"></div>
+        <video id="mainVideo" playsinline autoplay loop poster="Cover.png">
           <source id="videoSource" src="01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" type="video/mp4" />
         </video>
         <canvas id="visualizerCanvas" class="visualizer-canvas"></canvas>
       </div>
 
       <div class="track-meta">
-        <div class="meta-left">
+        <div>
           <div class="now-playing-tag">
             <span class="pulsing-dot"></span> NOW PLAYING // TRACK <span id="currentTrackNum">01</span>
           </div>
           <div class="track-title" id="currentTrackTitle">Two Cats, Zero Pounds (Genesis at 3 AM)</div>
-          <div class="artist-name">David Linacre • 3 AM, Two Cats & An Overdraft (2026)</div>
+          <div class="artist-name">David Linacre • Studio Master Deluxe</div>
         </div>
         <div class="meta-badges">
           <span class="badge active" id="currentTrackKey">D♭ Major</span>
@@ -536,14 +387,14 @@
       </div>
 
       <div class="controls-bar">
-        <button class="btn-circle" id="prevBtn" title="Previous Track">
+        <button class="btn-circle" id="prevBtn" title="Previous Track (Left Arrow)">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
         </button>
-        <button class="btn-circle play-btn" id="playBtn" title="Play / Pause">
+        <button class="btn-circle play-btn" id="playBtn" title="Play / Pause (Spacebar)">
           <svg id="playIcon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
           <svg id="pauseIcon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
         </button>
-        <button class="btn-circle" id="nextBtn" title="Next Track">
+        <button class="btn-circle" id="nextBtn" title="Next Track (Right Arrow)">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
         </button>
 
@@ -555,185 +406,66 @@
           <span class="time-label" id="durationTime">02:20</span>
         </div>
 
-        <button class="btn-circle" id="volumeBtn" title="Mute / Unmute">
+        <button class="btn-circle" id="visualizerModeBtn" title="Visualizer Mode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+        </button>
+        <button class="btn-circle" id="volumeBtn" title="Mute / Unmute (M)">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        </button>
+        <button class="btn-circle" id="fsBtn" title="Fullscreen (F)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
         </button>
       </div>
     </div>
 
-    <!-- Right: Tracklist Sidebar -->
-    <div class="playlist-card">
-      <div class="playlist-header">
-        <div class="album-art-thumb">
-          <img src="Cover.png" alt="Album Cover" />
+    <!-- Sidebar: Playlist & Lyrics Tabs -->
+    <div class="sidebar-card">
+      <div class="sidebar-header">
+        <div class="tab-switch-group">
+          <button class="tab-btn active" id="tabPlaylistBtn">16 Tracks</button>
+          <button class="tab-btn" id="tabLyricsBtn">Lyrics & Story</button>
         </div>
-        <div>
-          <div class="album-title-text">3 AM, Two Cats & An Overdraft</div>
-          <div class="album-artist-sub">David Linacre (2026)</div>
-        </div>
+        <a href="Cover.png" target="_blank" class="badge">Cover Art</a>
       </div>
-      <div class="playlist-scroll" id="tracklistContainer">
-        <!-- Rendered by JavaScript -->
+
+      <div class="sidebar-content-area">
+        <div id="playlistContainer"></div>
+        <div class="lyrics-view" id="lyricsContainer"></div>
       </div>
     </div>
   </main>
 
   <footer>
-    <div>© 2026 David Linacre. Self-produced, locally synthesized, independently mastered.</div>
+    <div>© 2026 David Linacre. Self-produced, locally generated, independently mastered.</div>
     <div class="footer-links">
       <a href="LINER_NOTES.md" target="_blank">Liner Notes</a>
       <a href="Tracklist.json" target="_blank">Tracklist JSON</a>
+      <a href="assets/press_kit/PRESS_KIT.md" target="_blank">Press Kit</a>
       <a href="https://linacre.site" target="_blank">linacre.site</a>
     </div>
   </footer>
 
   <script>
     const tracks = [
-      {
-        num: 1,
-        title: "Two Cats, Zero Pounds (Genesis at 3 AM)",
-        key: "D♭ Major",
-        bpm: 78,
-        duration: "02:20",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 2,
-        title: "Feline Landlords on the Spacebar",
-        key: "B♭ Minor",
-        bpm: 80,
-        duration: "02:15",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 3,
-        title: "Overdraft Love Letter",
-        key: "E♭ Major",
-        bpm: 76,
-        duration: "02:10",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 4,
-        title: "Coffee Stains & Broken Preamps",
-        key: "A♭ Major",
-        bpm: 82,
-        duration: "02:15",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 5,
-        title: "Sent to an A&R's Ghost",
-        key: "F Minor",
-        bpm: 75,
-        duration: "02:20",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 6,
-        title: "Tuna Can Grammys",
-        key: "C Minor",
-        bpm: 84,
-        duration: "02:10",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 7,
-        title: "Four Chords, Nine Lives",
-        key: "G♭ Major",
-        bpm: 77,
-        duration: "02:15",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 8,
-        title: "The Space Between Paychecks (Interlude)",
-        key: "D♭ Major",
-        bpm: 70,
-        duration: "01:45",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 9,
-        title: "Bedroom Platinum",
-        key: "B♭ Minor",
-        bpm: 80,
-        duration: "02:20",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 10,
-        title: "Cat Hair on the Pop Filter",
-        key: "E♭ Minor",
-        bpm: 85,
-        duration: "02:15",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 11,
-        title: "Streaming for Pennies",
-        key: "A♭ Major",
-        bpm: 76,
-        duration: "02:20",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 12,
-        title: "4 AM Epiphany",
-        key: "F Minor",
-        bpm: 74,
-        duration: "02:15",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 13,
-        title: "Whispering in the Mic (Don't Wake Neighbors)",
-        key: "D♭ Major",
-        bpm: 78,
-        duration: "02:15",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 14,
-        title: "Bounced to MP3",
-        key: "G♭ Major",
-        bpm: 83,
-        duration: "02:10",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 15,
-        title: "Two Little Purrs in the Monitor Mix",
-        key: "B♭ Minor",
-        bpm: 72,
-        duration: "02:15",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      },
-      {
-        num: 16,
-        title: "Sunrise on the Interface (Outro)",
-        key: "D♭ Major",
-        bpm: 75,
-        duration: "02:25",
-        src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4",
-        ready: true
-      }
+      { num: 1, title: "Two Cats, Zero Pounds (Genesis at 3 AM)", key: "D♭ Major", bpm: 78, duration: "02:20", art: "assets/tracks/Track_01.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 2, title: "Feline Landlords on the Spacebar", key: "B♭ Minor", bpm: 80, duration: "02:15", art: "assets/tracks/Track_02.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 3, title: "Overdraft Love Letter", key: "E♭ Major", bpm: 76, duration: "02:10", art: "assets/tracks/Track_03.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 4, title: "Coffee Stains & Broken Preamps", key: "A♭ Major", bpm: 82, duration: "02:15", art: "assets/tracks/Track_04.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 5, title: "Sent to an A&R's Ghost", key: "F Minor", bpm: 75, duration: "02:20", art: "assets/tracks/Track_05.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 6, title: "Tuna Can Grammys", key: "C Minor", bpm: 84, duration: "02:10", art: "assets/tracks/Track_06.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 7, title: "Four Chords, Nine Lives", key: "G♭ Major", bpm: 77, duration: "02:15", art: "assets/tracks/Track_07.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 8, title: "The Space Between Paychecks (Interlude)", key: "D♭ Major", bpm: 70, duration: "01:45", art: "assets/tracks/Track_08.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 9, title: "Bedroom Platinum", key: "B♭ Minor", bpm: 80, duration: "02:20", art: "assets/tracks/Track_09.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 10, title: "Cat Hair on the Pop Filter", key: "E♭ Minor", bpm: 85, duration: "02:15", art: "assets/tracks/Track_10.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 11, title: "Streaming for Pennies", key: "A♭ Major", bpm: 76, duration: "02:20", art: "assets/tracks/Track_11.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 12, title: "4 AM Epiphany", key: "F Minor", bpm: 74, duration: "02:15", art: "assets/tracks/Track_12.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 13, title: "Whispering in the Mic (Don't Wake Neighbors)", key: "D♭ Major", bpm: 78, duration: "02:15", art: "assets/tracks/Track_13.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 14, title: "Bounced to MP3", key: "G♭ Major", bpm: 83, duration: "02:10", art: "assets/tracks/Track_14.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 15, title: "Two Little Purrs in the Monitor Mix", key: "B♭ Minor", bpm: 72, duration: "02:15", art: "assets/tracks/Track_15.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" },
+      { num: 16, title: "Sunrise on the Interface (Outro)", key: "D♭ Major", bpm: 75, duration: "02:25", art: "assets/tracks/Track_16.png", src: "01%20-%20Two%20Cats,%20Zero%20Pounds%20(Genesis%20at%203%20AM).mp4" }
     ];
+
+    const lyricsData = {"1": "[Intro]\n(ambient rain against bedroom windowpane, analog vinyl crackle)\n(quiet breath intake)\nMmm... \n(soft feline purr curled up on the desk)\nYeah... David Liniker, 3 AM in the lab again.\n(gentle throat clear)\nLevels are good. Let's run it.\n\n[Verse 1]\n(hushed half-spoken delivery, intimate warmth)\nTwo feline landlords staring right at my screen\nJudging every chord progression in between\nOne's asleep across the spacebar, stretching out a pause\nThe other's tapping at an empty bowl with velvet claws.\nGot three pence in the bank, overdraft in red\nSelling twenty-dollar dreams when I should be in bed\nStreaming pays a fraction of a cent per spin\nWhile I'm pouring out my soul just to break back in\nTenth demo bounced to an A&R's ghost\nSent another quiet prayer to the industry post\nTuna cans stacked where my Grammys oughta sit\nFrayed headphone cable, but I don't care a bit.\n\n[Pre-Chorus]\n(subtle dual-tracked breathy harmony)\nLook at the red lights flashing on the rack\nNo safety net, no turning back\nThey want synthetic, they want clean\nI'm painting warmth in the midnight green.\n\n[Chorus]\n(warm relaxed melodic vocal, behind-the-beat swing)\nMmm... let the pennies roll slow\n(two cats, zero pounds, and an old radio)\nOoh... we're gonna make it out the cold\n(one more hook before the night grows old)\nThey buy the plastic, but I'm crafting soul\nDavid on the keys while the tape reels roll...\n\n[Verse 2]\n(close-mic intimate delivery, soft rasp)\nGot electrical tape holding down the preamp jack\nWhispering my verses so the neighbors don't attack\nSixty-four gigs of RAM, but the cupboards are bare\nStill got a sixteenth-note swing in the midnight air\nLiniker the optimist, broke upon the keys\nLooking for a cadence that sets my spirit free\nMy tabby gave a meow like a pitch-correct chime\nTold me keep the pocket and we'll hit it on the time\nThey don't care 'bout charts or a platinum plaque\nLong as there's a lap and a blanket on their back.\n\n[Bridge]\n(tape flutter, acoustic Rhodes chords, rain tapping)\nRain keeps drawing bars across the window pane...\nA million unsigned voices trying to do the same...\nI've got no manager, no advance in hand...\nJust nine lives between us...\nAnd a four-chord plan.\n\n[Chorus]\n(warm layered vocal, relaxed groove)\nMmm... let the pennies roll slow\n(two cats, zero pounds, and an old radio)\nOoh... we're gonna make it out the cold\n(one more hook before the night grows old)\nThey buy the plastic, but I'm crafting soul\nDavid on the keys while the tape reels roll...\n\n[Outro]\n(soft purring sound, sleepy keyboard clicks)\n(whispered)\nHey, move off the fader, buddy... that's my master bus.\nGoodnight, boys.\nMmm... Liniker on the track.\n(unresolved D flat major 9 chord rings out and dissolves softly into tape hiss)", "2": "[Intro]\n(needle drop, cozy vinyl hiss)\nMmm... don't touch that button...\n(cat step on mechanical keyboard: *click-clack*)\nHey! David Liniker, take two...\n\n[Verse 1]\nWalking 'cross the keys like you own the lease\nTwo feline landlords disturbing my peace\nTabby hit the mute switch right before the drop\nTuxedo in the corner saying: \"Make it stop.\"\nGot empty coffee mugs and an overdue light\nTwelve hours deep in the groove tonight\nThey don't care about a contract or a sync deal\nJust want a warm spot on the master reel.\n\n[Chorus]\nFeline landlords dancing on the spacebar\nJudging every loop from near and far\nZero in the bank, but the bassline tight\nTwo purring kings in the studio light.\n\n[Verse 2]\nI tried to track a vocal, hit the record head\nTabby sat right down where the cables lead\nGave a sleepy yawn in the middle of my take\nTurned my sad ballad to a cozy coffee break\nThey're the toughest critics that an artist ever knew\nIf it isn't funky, they'll just chew upon my shoe.\n\n[Outro]\nYeah... good job on that snare, buddy.\nLiniker on the keys...\n(purring fades into dusty tape delay)", "3": "[Intro]\n(phone notification chime, quiet sigh)\nDear Banking App... I know you miss me...\nYeah...\n\n[Verse 1]\nGot a notification that I shouldn't have read\nMinus four hundred in the glowing red\nI sent an invoice out three weeks ago\nTo an indie label moving way too slow\nMy cats are dining on the finest salmon pate\nWhile I split a single egg at the break of day\nThey look at me like: \"David, where's the second course?\"\nBroke musician life with no remorse.\n\n[Chorus]\nOh, an overdraft love letter sent in the mail\nChasing down dreams on a paper trail\nThey say get a real job, but I just smile\nGot twenty new tracks in the export file.\n\n[Verse 2]\nInterest accumulating at the stroke of twelve\nStacking up the vinyls on a secondhand shelf\nEvery single penny poured into this sound\nSomeday this little room will shake the ground.\n\n[Outro]\n(soft Rhodes chords fade into rain)\nLiniker... still here.\nGoodnight.", "4": "[Intro]\n(kettle boiling, tape hum)\nThree spoons of instant... black as midnight.\n\n[Verse 1]\nCoffee ring circles on the interface wood\nPreamp only works when the cable's angled good\nWiggle it a millimeter to the left or right\nOr the stereo channel drops clean out of sight\nLiniker engineering with a roll of tape\nEvery broken knob is a chance to reshape.\n\n[Chorus]\nCoffee stains and broken preamps keeping the beat\nDusty room magic right off the street\nWho needs the million-dollar console shine\nWhen the soul is pure and the groove is mine?\n\n[Outro]\n(gentle hiss of the tape head closing)\nJust keep it tilted... right there.", "5": "[Intro]\n(keystrokes, email whoosh sound)\nPrivate SoundCloud link... sent. Again.\n\n[Verse 1]\n\"Dear Executive, hope this email finds you well\"\nAnother formal letter in a personal hell\nZero listens on the counter after forty days\nGhosted by the industry in twenty different ways\nCats are asleep on the warm power brick\nTold me don't worry 'bout their algorithmic trick.\n\n[Chorus]\nSent to an A&R's ghost in the dark\nLeaving a melody, leaving a mark\nThey didn't click play, but the universe heard\nDavid Liniker on every single word.\n\n[Outro]\n(reverb tail rings out into the rain)\nTheir loss, boys. Next track.", "6": "[Intro]\n(can opener sound, rhythmic clinking)\nAnd the award for Best Bedroom Producer goes to...\n\n[Verse 1]\nStacking empty tuna cans four stories tall\nMakeshift trophy sitting by the bedroom wall\nTabby gave a nod like an academy peer\n\"Best Snare Tuning of the Entire Year\"\nGold plated aluminum, gourmet chicken feast\nFeeding my companions while I feed the beast.\n\n[Chorus]\nTuna Can Grammys shining in the dim\nTwo feline fans singing on the rim\nWe don't need a red carpet or a limousine\nWe're royal sovereigns of the late-night scene.\n\n[Outro]\nThank you to my cats, my interface, and the coffee pot.", "7": "[Intro]\n(acoustic guitar harmonics, warm sub hum)\nD flat major... B flat minor... G flat... A flat. That's home.\n\n[Verse 1]\nFour chords on repeat till the daylight starts\nStitching together these broken parts\nNine lives between us in this tiny space\nPurring away every worry from my face\nMoney comes and money goes like winter rain\nMusic is the medicine that eases the strain.\n\n[Chorus]\nFour simple chords and nine little lives\nThat's how the midnight dreamer survives\nNo riches to boast, no diamonds to show\nJust melodies keeping our spirits aglow.\n\n[Outro]\n(fingerpicked guitar rings out softly)\nNine lives... forever.", "8": "[Instrumental Solo Piano & Bedroom Ambiance]\n(Soft upright piano chords drifting through warm spring reverb)\n(Distant rain on windowpane, steady vinyl crackle)\n(Whispered monologue)\n\"It's not about the money... it's about what you leave behind in the sound.\"\n(Two quiet cat purrs harmonize with a sustained D flat major 9 chord)", "9": "[Intro]\n(punchy 808 sub thump, hi-hat roll)\nThey ask where I record... right next to my pillow.\n\n[Verse 1]\nRTX humming like an engine in the back\nSixty-four gigs pushing every audio track\nNo Abbey Road engineers, no fancy acoustic tiles\nJust mattress on the wall and a folder full of files\nLiniker cooking up a certified classic\nTurning humble circumstances into something magic.\n\n[Chorus]\nBedroom Platinum, certified gold\nThe realest stories that have never been told\nFrom an empty pocket to the top of the shelf\nCreated by a man who believed in himself.\n\n[Outro]\nStraight from the bedroom to the world.", "10": "[Intro]\n(blowing sound on microphone capsule: *pfft-pfft*)\n*cough* Hold on... orange fur on the capsule again.\n\n[Verse 1]\nBlack mesh circle looking like a woolen sweater\nEvery time I clean it off, the cats say make it better\nRubbing their cheeks right against the metal stand\nOfficial vocal coaches of the Liniker band\nWarm high-frequency filter, natural roll-off smooth\nCat hair on the mic capsule adding to the groove.\n\n[Chorus]\nCat hair on the pop filter, purrs in the mix\nAnalog problems that you never need to fix\nOrganic texture that you cannot synthesize\nPure bedroom love right before your eyes.\n\n[Outro]\nLeave it on. Sounds warmer anyway.", "11": "[Intro]\n(calculator tapping sound, chuckled sigh)\nPoint zero zero three... multiplied by ten thousand...\n\n[Verse 1]\nTen thousand spins for a twenty-pound note\nBarely enough to buy a winter coat\nOr three boxes of litter and a can of stew\nStill wouldn't trade this for a nine-to-five view\nBecause one kid in Tokyo is listening right now\nNodding his head to the Liniker sound.\n\n[Chorus]\nStreaming for pennies, but rich in the soul\nLetting the tape reels steadily roll\nThey measure success in the coins that you hold\nI measure mine in the stories we've told.\n\n[Outro]\nWorth every single fraction of a penny.", "12": "[Intro]\n(lush analog synth pad swelling, clock ticking)\n4:02 AM. That moment when the noise stops.\n\n[Verse 1]\nThe traffic is silent, the city is asleep\nThe melody's floating from the shadows so deep\nFinger finds the chord that was missing all along\nThe missing puzzle piece of a ten-year song\nTuxedo opened one eye, gave a little meow\nTold me: \"That's the hook, David. Record it right now.\"\n\n[Chorus]\n4 AM epiphany falling from the sky\nWiping the midnight exhaustion from my eye\nWhen the stars align on an old Rhodes key\nThe whole universe opens up for me.\n\n[Outro]\n(synth pad resolves to soft electric piano)\nGot it. It's in the bag.", "13": "[Intro]\n(whispered ASMR tone, extremely close to capsule)\nShh... Mrs. Higgins in 4B is sleeping. Keep it low.\n\n[Verse 1]\nPaper-thin walls in this old council flat\nIf I yell on the hook, there's an angry broom tat\nSo I lean into the grille, keep it hushed and sweet\nTurned my noise restrictions to an intimate beat\nVelvet whispered cadence floating in the air\nSounds like a confession in a midnight prayer.\n\n[Chorus]\nWhispering in the mic so the neighbors don't complain\nTurning quiet bedroom secrets into falling rain\nSometimes the softest voice carries furthest away\nSpeaking to the hearts that are waiting for the day.\n\n[Outro]\n(hushed breath, distant siren)\nNight, Mrs. Higgins.", "14": "[Intro]\n(export progress bar sound, cheerful Rhodes bounce)\nCommand-B. Render offline. 100 percent.\n\n[Verse 1]\nExport complete on the master bus\nNo more tweaking, no more fuss\nPut it on the phone, put the earbuds in\nWalking around the block with a quiet little grin\nTwo cats at the window watching me depart\nCarrying sixteen pieces of my heart.\n\n[Chorus]\nBounced to MP3, fresh out the oven\nPacked with dedication and a whole lot of lovin'\nFrom 3 AM darkness to a morning shine\nDavid Liniker's signature on the bottom line.\n\n[Outro]\nSounds great on the ear-pods. Done.", "15": "[Intro]\n(pure acoustic Rhodes and low-passed bass)\n(rhythmic, soothing cat purr embedded into the sub frequencies)\nMmm... feel that low end...\n\n[Verse 1]\nForty Hertz vibration, sixty Hertz glow\nTwo little purrs in the bottom row\nNatural LFO oscillating so sweet\nPuts a sleepy smile on the late-night street\nSafe in the warmth of our little cocoon\nDrifting beneath a waning winter moon.\n\n[Chorus]\nTwo little purrs in the monitor mix\nThe sweetest lullaby that ever was fixed\nNothing in the world could disturb us tonight\nWrapped in the magic of the audio light.\n\n[Outro]\n(peaceful purring dissolving into spring reverb)\nRest easy, boys.", "16": "[Intro]\n(morning birds chirping outside, golden synth chords)\nLook at that... daylight through the blinds.\n\n[Verse 1]\nGolden sunlight hitting the fader knobs\nTime for the world to go off to their jobs\nI've got bags under my eyes and a full album done\nSixteen soulful tracks under the rising sun\nTabby stretched his paws, Tuxedo gave a purr\n\"Breakfast time, David. We did it, sir.\"\n\n[Chorus]\nSunrise on the interface, morning in the room\nWe survived the darkness and we conquered the gloom\nDavid Linacre, signing off the reel\nUntil the next midnight when we capture the feel.\n\n[Outro]\n(warm D flat major chord rings out with birdsong)\nLiniker... out.\nTime to feed the cats.\n(tape click, kettle boil, fade out)"};
 
     let currentIndex = 0;
     const video = document.getElementById('mainVideo');
@@ -743,28 +475,33 @@
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     const volumeBtn = document.getElementById('volumeBtn');
+    const fsBtn = document.getElementById('fsBtn');
     const progressBar = document.getElementById('progressBar');
     const progressFill = document.getElementById('progressFill');
     const currentTimeLabel = document.getElementById('currentTime');
     const durationTimeLabel = document.getElementById('durationTime');
-    const tracklistContainer = document.getElementById('tracklistContainer');
+    const playlistContainer = document.getElementById('playlistContainer');
+    const lyricsContainer = document.getElementById('lyricsContainer');
+    const tabPlaylistBtn = document.getElementById('tabPlaylistBtn');
+    const tabLyricsBtn = document.getElementById('tabLyricsBtn');
 
     function renderPlaylist() {
-      tracklistContainer.innerHTML = '';
+      playlistContainer.innerHTML = '';
       tracks.forEach((t, idx) => {
         const row = document.createElement('div');
         row.className = `track-row ${idx === currentIndex ? 'active' : ''}`;
         row.innerHTML = `
-          <div class="row-num">${String(t.num).padStart(2, '0')}</div>
+          <div class="track-art-thumb">
+            <img src="${t.art}" alt="Art" onerror="this.src='Cover.png'"/>
+          </div>
           <div class="row-info">
             <div class="row-title">${t.title}</div>
             <div class="row-sub">${t.key} • ${t.bpm} BPM</div>
           </div>
-          <span class="row-badge">${idx === 0 ? 'Master MP4' : 'Studio'}</span>
           <div class="row-duration">${t.duration}</div>
         `;
         row.addEventListener('click', () => loadTrack(idx));
-        tracklistContainer.appendChild(row);
+        playlistContainer.appendChild(row);
       });
     }
 
@@ -776,41 +513,33 @@
       document.getElementById('currentTrackKey').innerText = t.key;
       document.getElementById('currentTrackBpm').innerText = `${t.bpm} BPM`;
 
+      lyricsContainer.innerText = lyricsData[t.num] || 'Lyrics loading...';
+
       video.src = t.src;
       video.play().then(() => updatePlayState(true)).catch(() => updatePlayState(false));
       renderPlaylist();
     }
 
     function updatePlayState(isPlaying) {
-      if (isPlaying) {
-        playIcon.style.display = 'none';
-        pauseIcon.style.display = 'block';
-      } else {
-        playIcon.style.display = 'block';
-        pauseIcon.style.display = 'none';
-      }
+      playIcon.style.display = isPlaying ? 'none' : 'block';
+      pauseIcon.style.display = isPlaying ? 'block' : 'none';
     }
 
     playBtn.addEventListener('click', () => {
-      if (video.paused) {
-        video.play();
-        updatePlayState(true);
-      } else {
-        video.pause();
-        updatePlayState(false);
-      }
+      if (video.paused) { video.play(); updatePlayState(true); }
+      else { video.pause(); updatePlayState(false); }
     });
 
     prevBtn.addEventListener('click', () => {
-      let nextIdx = currentIndex - 1;
-      if (nextIdx < 0) nextIdx = tracks.length - 1;
-      loadTrack(nextIdx);
+      let n = currentIndex - 1;
+      if (n < 0) n = tracks.length - 1;
+      loadTrack(n);
     });
 
     nextBtn.addEventListener('click', () => {
-      let nextIdx = currentIndex + 1;
-      if (nextIdx >= tracks.length) nextIdx = 0;
-      loadTrack(nextIdx);
+      let n = currentIndex + 1;
+      if (n >= tracks.length) n = 0;
+      loadTrack(n);
     });
 
     video.addEventListener('timeupdate', () => {
@@ -832,13 +561,52 @@
       volumeBtn.style.color = video.muted ? '#ef4444' : '#fff';
     });
 
+    fsBtn.addEventListener('click', () => {
+      if (!document.fullscreenElement) { video.requestFullscreen().catch(err => alert(err.message)); }
+      else { document.exitFullscreen(); }
+    });
+
+    // Tab Switching
+    tabPlaylistBtn.addEventListener('click', () => {
+      tabPlaylistBtn.classList.add('active');
+      tabLyricsBtn.classList.remove('active');
+      playlistContainer.style.display = 'block';
+      lyricsContainer.classList.remove('active');
+    });
+
+    tabLyricsBtn.addEventListener('click', () => {
+      tabLyricsBtn.classList.add('active');
+      tabPlaylistBtn.classList.remove('active');
+      playlistContainer.style.display = 'none';
+      lyricsContainer.classList.add('active');
+    });
+
+    // Keyboard Hotkeys
+    window.addEventListener('keydown', (e) => {
+      if (e.target.tagName === 'INPUT') return;
+      if (e.code === 'Space') {
+        e.preventDefault();
+        playBtn.click();
+      } else if (e.code === 'ArrowRight') {
+        video.currentTime = Math.min(video.duration, video.currentTime + 5);
+      } else if (e.code === 'ArrowLeft') {
+        video.currentTime = Math.max(0, video.currentTime - 5);
+      } else if (e.code === 'KeyM') {
+        volumeBtn.click();
+      } else if (e.code === 'KeyF') {
+        fsBtn.click();
+      } else if (e.code === 'KeyL') {
+        tabLyricsBtn.click();
+      }
+    });
+
     function formatTime(sec) {
       const m = Math.floor(sec / 60);
       const s = Math.floor(sec % 60);
       return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
     }
 
-    // Audio Visualizer Web Audio API Context
+    // Visualizer Engine
     let audioCtx, analyser, dataArray;
     function initVisualizer() {
       try {
@@ -851,9 +619,7 @@
         analyser.fftSize = 128;
         dataArray = new Uint8Array(analyser.frequencyBinCount);
         drawVisualizer();
-      } catch (e) {
-        console.log('AudioContext init on gesture');
-      }
+      } catch (e) {}
     }
 
     const canvas = document.getElementById('visualizerCanvas');
@@ -867,17 +633,17 @@
       analyser.getByteFrequencyData(dataArray);
 
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      const barWidth = (canvas.width / dataArray.length) * 1.6;
+      const barWidth = (canvas.width / dataArray.length) * 1.5;
       let x = 0;
 
       for (let i = 0; i < dataArray.length; i++) {
-        const barHeight = (dataArray[i] / 255) * canvas.height * 0.85;
+        const barHeight = (dataArray[i] / 255) * canvas.height * 0.88;
         const grad = ctx.createLinearGradient(0, canvas.height - barHeight, 0, canvas.height);
-        grad.addColorStop(0, 'rgba(245, 158, 11, 0.9)');
+        grad.addColorStop(0, 'rgba(245, 158, 11, 0.95)');
         grad.addColorStop(1, 'rgba(245, 158, 11, 0.05)');
 
         ctx.fillStyle = grad;
-        ctx.fillRect(x, canvas.height - barHeight, barWidth - 3, barHeight);
+        ctx.fillRect(x, canvas.height - barHeight, barWidth - 2, barHeight);
         x += barWidth;
       }
     }
@@ -887,7 +653,7 @@
       if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
     }, { once: true });
 
-    renderPlaylist();
+    loadTrack(0);
   </script>
 </body>
 </html>

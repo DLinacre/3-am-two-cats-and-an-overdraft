@@ -1,0 +1,25 @@
+{
+  "name": "David Linacre — 3 AM, Two Cats & An Overdraft",
+  "short_name": "DL 3 AM",
+  "description": "16-Track Lo-Fi Chillhop Album with Master 1080p MP4 Music Videos & Live Web Visualizer",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0b10",
+  "theme_color": "#f59e0b",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["music", "entertainment", "multimedia"]
+}
